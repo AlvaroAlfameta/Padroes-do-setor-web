@@ -21,6 +21,17 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 * Não mescle nomes.
 * Nome das classes devem ser substantivos e não devem conter verbos. Ex: **ClienteRepository**.
 * Nome dos metodos devem conter verbos de preferencia no infinitivo. Ex: **AdicionarCliente**.
+* Nome das classes e dos arquivos devem ser escritos em PascalCase.
+
+
+<h4>Variaveis</h4>
+
+* Variaveis privadas devem ser escritas em camelCase.
+* Variaveis privadas devem ser escritas com _ (underline) antes do nome.
+* Variaveis publicas (Gets e Sets) devem ser escritas em PascalCase.
+* Variaveis constantes devem ser escritas com todas as letras em MAISCULO.
+* Variaveis que forem iniciadas apenas no construtor devem receber o atributo "readonly".
+* Não colocar o atributo "private" na frente de variaveis privadas (por padrão, todas as variaveis são privadas no C#).
 
 <h4>Metodos</h4>
 
@@ -31,4 +42,11 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
   * Se o método tiver mais de uma responsabilidade extraia em dois ou mais.
   * Leia seu método de cima pra baixo como uma narrativa, ele deve fazer sentido.
   * Aplique uma boa indentação
+  * Nome dos métodos devem ser escritos em PascalCase
   
+<h4>Quando for usar Javascript</h4>
+
+* Nome dos arquivos devem ser escritos em PascalCase
+* Nome dos metodos devem ser escritos em camelCase
+* Comparações devem utilizar 3 sinais de igual "==="
+* Sempre que possivel, utilizar interpolação ao invés de concatenar string
