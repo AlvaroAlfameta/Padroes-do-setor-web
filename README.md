@@ -12,16 +12,15 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
   * Use Nomes fáceis de se encontrar.
   * Use nomes pronunciaveis.
   * Não economize nas palavras.
-  * Revele a intenção do código.
+  * Use nomes que descrevam a intenção do código.
   * Evite palavras que podem ser variaveis ou palavras reservadas em outras plataformas.
-  * Evite dar nomes como "doubleValorPromocional", o tipo não precisa estar no nome.
+  * Evite nomes como "doubleValorPromocional", o tipo não precisa estar no nome.
   * Evite trocadilhos.
   * Não misture idiomas.
-  * Não mescle nomes.
   * Nome das classes devem ser substantivos e não devem conter verbos. Ex: **ClienteRepository**.
   * Nome dos metodos devem conter verbos de preferencia no infinitivo. Ex: **AdicionarCliente**.
-  * Evite linhas com mais que 100 caracteres.
-  * A linguagem padrão para escrita do código é em inglês* 
+  
+  * A linguagem padrão para escrita do código é o inglês* 
   * Se uma abreviação ou acronimo possuir até 3 letras, deve ser escrito em maisculo. Ex: 
   ```CSharp
     string ATR; // Correto, ATR tem apenas 3 letras.
@@ -34,8 +33,11 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
   * Quando você arrumar um bug, primeiro escreva um teste que falhe, então corrija o bug e verifique se o teste passa.*
   * Crie testes para novas funcionalidades.*
   * Não commite codigos sem antes testar.
+  * Não commite códigos que não rodam.
   * Resolva problemas reais resolvendo literalmente um problema real.
     Quando for possivel, entre em contato com o cliente que deseja a funcionalidade que você esta    desenvolvendo e com a ajuda dele, entenda o problema, valide e teste a solução diretamente com ele. Apenas usando na vida real é que podemos ter certeza que que ele esta atendendo o cliente e esta pronto para uso.
+  * Evite documentação desnecessária
+
 
 <p style="font-size:12px">*válido para todos os projetos criados a partir da publicação desse documento</p>
 
@@ -64,11 +66,12 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 
 <h5>1.3 - Regras Gerais</h5>
 
+  * Evite linhas com mais de 100 caracteres
   * As chaves devem iniciar sempre na linha de baixo. Ex:
   ```CSharp
     void Metodo()
     {
-      // faz alguma coisa
+      // Faz alguma coisa
     }
   ```
 
@@ -87,7 +90,7 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 * Comparações devem utilizar 3 sinais de igual "===". Ex:
   ```javascript
   if(idade === 18) {
-    ...
+    // Faz alguma coisa
   }
   ```
 * Sempre que possivel, utilizar interpolação ao invés de concatenar string. Ex:
@@ -101,13 +104,14 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 * Nome dos metodos devem ser escritos em lowerCamelCase.
 
 
-<h3>4 - Quando estiver usando Flutter</h3>
+<h3>4 - Quando estiver usando Dart/Flutter</h3>
 
 * Nome das classes deve ser escrito em UpperCamelCase.
-* Nome dos arquivos devem ser escritos em lowerCase_with_underscore.
+* Nome dos arquivos devem ser escritos em snake_case.
 * Nome das variaveis deve ser escrito com lowerCamelCase.
 * Nome de variaveis constantes deve ser escrito lowerCamelCase.
-* Não use _ (underline) para variaveis que não são privadas
+* Não inicie com _ (underline) variáveis que não são privadas
+* Evite linhas com mais de 80 caracteres.
 * Nome de variavel constante global deve ser escrita com um k na frente. Ex:
   ```dart
     const kDefaultTextStyle = TextStyle();
