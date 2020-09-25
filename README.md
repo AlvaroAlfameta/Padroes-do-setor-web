@@ -35,7 +35,7 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
   * Não commite codigos sem antes testar.
   * Não commite códigos que não rodam.
   * Resolva problemas reais resolvendo literalmente um problema real.
-    Quando for possivel, entre em contato com o cliente que deseja a funcionalidade que você esta    desenvolvendo e com a ajuda dele, entenda o problema, valide e teste a solução diretamente com ele. Apenas usando na vida real é que podemos ter certeza que que ele esta atendendo o cliente e esta pronto para uso.
+    Quando for possivel, entre em contato com o cliente que deseja a funcionalidade que você esta    desenvolvendo e com a ajuda dele, entenda o problema, valide e teste a solução. Apenas usando na vida real é que podemos ter certeza que que ele esta atendendo o cliente e esta pronto para uso.
   * Evite documentação desnecessária
 
 
@@ -83,9 +83,11 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
   
   * Evite utilizar comentarios desnecessários.
   * Uma boa pratica do uso dos comentaríos e explicar o por que foi feito daquela maneira ou qual é a regra de negócio do metodo.
+
+
 <h3>2 - Quando estiver usando Javascript</h3>
 
-* Nome dos arquivos devem ser escritos em lowerCamelCase.
+* Nome dos arquivos devem ser escritos em lowercase.
 * Nome dos metodos devem ser escritos em lowerCamelCase.
 * Comparações devem utilizar 3 sinais de igual "===". Ex:
   ```javascript
@@ -97,6 +99,9 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
   ```javascript
   var welcomeText = `Olá, seja bem vindo ${nome}`
   ```
+* Evite linhas com mais de 80 caracteres.
+* Use 1 linha em branco para separar um metodo do outro
+* Fazer sempre uso de linters para ajudar na padronização do código
 
 <h3>3 - Quando estiver usando Vue.JS</h3>
 
@@ -116,3 +121,18 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
   ```dart
     const kDefaultTextStyle = TextStyle();
   ```
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <h3>5 - Fontes utilizadas para criação desse documento</h3>
+
+* [Style guide for Flutter repo](https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo)
+* [Effective Dart](https://dart.dev/guides/language/effective-dart)
+* [Seção CleanCode do curso de arquitura de software](https://desenvolvedor.io/curso-online-fundamentos-de-arquitetura-de-software)
+* [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
