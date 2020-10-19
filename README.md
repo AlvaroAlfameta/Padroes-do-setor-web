@@ -73,11 +73,13 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 * Nome dos métodos devem ser escritos em UppperCamelCase
 * Nome das classes e dos arquivos devem ser escritos em UppperCamelCase.
 * Não colocar o atributo "private" na frente de métodos privados.
+* Evite acoplamento desnecessários.
 
 #### 2.3 - Regras Gerais
 
 * Evite linhas com mais de 100 caracteres
 * As chaves devem iniciar sempre na linha de baixo. Ex:
+* Sempre que possivel, use interpolação ao invés de concatenação.
 
   ```CSharp
     void Metodo()
@@ -118,14 +120,15 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 * Sempre inicialize objetos com a sintaxe {}
 
 ```javascript
-  let objeto = {} // Correto
-  let objeto = new Object(); // Errado
+  const objeto = {} // Correto
+  const objeto = new Object(); // Errado
 ```
 
 ### 4 - Quando estiver usando Vue.JS
 
 * Nome dos arquivos devem ser escritos em UpperCamelCase.
 * Nome dos métodos devem ser escritos em lowerCamelCase.
+* Os estilos sempre devem ser do tipo 'Scoped'.
 
 ### 5 - Quando estiver usando Dart/Flutter
 
@@ -145,18 +148,18 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 
 * Nome das tabelas e colunas devem ser escritos em snake_case.
 * Não usar no nome das tabelas e colunas palavras reservadas do banco. Ex: **SELECT, WHERE**
-* Todos os comandos e palavras reservadas devem ser escritos sem letras MAIÚSCULAS. Ex:
+* Todos os comandos e palavras reservadas devem ser escritos em letras MAIÚSCULAS. Ex:
 
 ```sql
   select * from usuario where id > 50; // Errado
   SELECT * FROM usuario WHERE id > 50; // Correto
 ```
 
-* Tabelas devem possuir nome no singular. Ex;
+* Tabelas devem possuir nome no plural. Ex;
 
 ```sql
-  CREATE TABLE usuarios () // Errado
-  CREATE TABLE usuario () // Correto
+  CREATE TABLE usuarios () // Correto
+  CREATE TABLE usuario () // Errado
 ```
 
 &nbsp;
