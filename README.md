@@ -41,15 +41,17 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 * Resolva problemas reais resolvendo literalmente um problema real.
   Quando for possível, entre em contato com o cliente que deseja a funcionalidade que você esta desenvolvendo e com a ajuda dele, entenda o problema, valide e teste a solução. Apenas usando na vida real é que podemos ter certeza que que ele esta atendendo o cliente e esta pronto para uso.
 * Aplique uma boa indentação
-* Faça uso de comentários TODO
+
+(*válido para todos os projetos criados a partir da publicação desse documento)
   
 #### 1.1 - Comentários
 
 * Evite documentação desnecessária
 * Evite utilizar comentários desnecessários.
+* Faça uso de comentários TODO
 * Uma boa pratica do uso dos comentários e explicar o por que foi feito daquela maneira ou qual é a regra de negócio que foi implementada no método.
   
-*válido para todos os projetos criados a partir da publicação desse documento
+
 
 ### 2 - Quando estiver usando CSharp (C#)
 
