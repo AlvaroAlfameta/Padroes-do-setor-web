@@ -110,7 +110,7 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 * Sempre que possível, utilizar interpolação ao invés de concatenar string. Ex:
   
   ```javascript
-  let welcomeText = `Olá, seja bem vindo ${nome}`
+  const welcomeText = `Olá, seja bem vindo ${nome}`
   ```
 
 * Evite linhas com mais de 80 caracteres.
