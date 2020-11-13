@@ -81,15 +81,13 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 
 * Evite linhas com mais de 100 caracteres
 * As chaves devem iniciar sempre na linha de baixo. Ex:
-* Sempre que possivel, use interpolação ao invés de concatenação.
-
   ```CSharp
     void Metodo()
     {
       // Faz alguma coisa
     }
   ```
-
+* Sempre que possivel, use interpolação ao invés de concatenação.
 * Comentários devem possuir um espaço após as barras de comentário. Ex:
 
   ```CSharp
@@ -140,11 +138,6 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
 * Nome de variáveis constantes deve ser escrito lowerCamelCase.
 * Não inicie com _ (underline) variáveis que não são privadas.
 * Evite linhas com mais de 80 caracteres.
-* Nome de variável constante global deve ser escrita com um k na frente. Ex:
-
-  ```dart
-    const kDefaultTextStyle = TextStyle();
-  ```
 
 ### 6 - PostgresSQL
 
@@ -163,6 +156,13 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
   CREATE TABLE usuarios () // Correto
   CREATE TABLE usuario () // Errado
 ```
+
+### 7 - Git
+* Criar branch por tarefa com nome IdTarefa-Algumas-Palavras-Chaves;
+```git
+  git checkout -b 24296-bug-alterar-classificador-web
+```
+* Os commits na branch devem ter mensagens descritivas e agrupar somente alterações semelhantes (ex.: Ajuste nas queries de inserção; Adição de botões na interface; Rotina de leitura de arquivo);
 
 &nbsp;
 &nbsp;
