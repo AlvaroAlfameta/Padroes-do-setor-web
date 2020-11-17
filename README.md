@@ -163,6 +163,7 @@ _Esse documento tem  como finalidade definir alguns padrões de desenvolvimento 
   git checkout -b 24296-bug-alterar-classificador-web
 ```
 * Os commits na branch devem ter mensagens descritivas e agrupar somente alterações semelhantes (ex.: Ajuste nas queries de inserção; Adição de botões na interface; Rotina de leitura de arquivo);
+* Link com comandos uteis de GIT: https://gist.github.com/leocomelli/2545add34e4fec21ec16
 
 &nbsp;
 &nbsp;
